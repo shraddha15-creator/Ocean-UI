@@ -1,0 +1,36 @@
+:root {
+    --alert-info: rgba(135, 207, 235, 0.548);
+    --alert-success: rgba(0, 128, 0, 0.541);
+    --alert-warning: rgba(255, 255, 0, 0.5);
+    --alert-err: rgba(255, 0, 0, 0.425);
+}
+
+.alert-container {
+    padding: 1rem;
+}
+
+.alert {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    box-shadow: 2px 3px 5px;
+}
+
+.alert-success {
+    background-color: var(--alert-success);
+}
+
+.alert-info {
+    background-color: var(--alert-info);
+}
+
+.alert-warning {
+    background-color: var(--alert-warning);
+}
+
+.alert-err {
+    background-color: var(--alert-err);
+}

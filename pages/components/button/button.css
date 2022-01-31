@@ -1,0 +1,50 @@
+:root {
+    --btn-disabled: #d2b7f8;
+}
+
+.btn-container {
+    padding: 2rem;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border-radius: 100px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.btn-dark {
+    background-color: var(--primary-color);
+    color: var(--primary-light);
+    font-weight: bold;
+}
+
+.btn-light {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.btn-disabled {
+    background-color: var(--btn-danger);
+    color: var(--btn-disabled);
+    cursor: not-allowed;
+}
+
+.btn-with-links {
+    cursor: help;
+    border-radius: 5px;
+}
+
+.btn-with-icon {
+    background-color: var(--primary-light);
+}
+
+.btn-floating {
+    box-shadow: 5px 5px 5px var(--primary-color);
+    background-color: var(--primary-light);
+    background-color: transparent;
+    padding: 4% 5%;
+    border-radius: 100%;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
