@@ -1,0 +1,42 @@
+.comp-page-container {
+    display: flex;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 10%;
+    margin-left: 5rem;
+}
+
+.navbar-left-title {
+    font-weight: bold;
+}
+
+.navbar-left-items {
+    padding: 0.3rem 0.5rem;
+}
+
+.navbar-left-items:hover {
+    background-color: var(--primary-light);
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.active-tab {
+    color: var(--primary-color)
+}
+
+.container-docs {
+    margin: 0 1rem 0 6rem;
+    padding: 0 2rem 0 0;
+}
+
+.comp-page-header {
+    font-size: 2rem;
+}
+
+.comp-page-details {
+    padding-top: 2rem;
+}
