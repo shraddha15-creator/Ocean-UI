@@ -1,0 +1,19 @@
+.avatar {
+    padding: 1rem 0;
+}
+
+.avatar-rounded {
+    border-radius: 100%;
+}
+
+.avatar-lg {
+    width: 8vw;
+}
+
+.avatar-md {
+    width: 6vw;
+}
+
+.avatar-sm {
+    width: 4vw;
+}
