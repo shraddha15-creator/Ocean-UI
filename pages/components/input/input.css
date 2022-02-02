@@ -1,0 +1,67 @@
+@import url(../../docs.css);
+@import url(../../../style.css);
+
+:root {
+    --input-success: green;
+    --input-warning: orange;
+    --input-err: red;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.input-box {
+    padding: 0.7rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 100px;
+    width: 40%;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+}
+
+.input-box:focus {
+    border: 3px solid var(--primary-color);
+    width: 50%;
+}
+
+.input-label {
+    margin: 0 0.5rem -1rem 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.input-primary {
+    background-color: var(--primary-light);
+}
+
+.input-secondary {
+    border: 2px solid var(--primary-color);
+}
+
+.input-secondary:hover {
+    border: 2px solid var(--primary-color);
+    box-shadow: 2px 2px 15px var(--primary-color);
+}
+
+.input-secondary:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: 2px 2px 15px var(--primary-color);
+}
+
+.input-box-sq {
+    border-radius: 10px;
+}
+
+/* Validation Style */
+#input-validation-msg {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: -1rem 0 0 1rem;
+}
