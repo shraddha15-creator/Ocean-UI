@@ -1,0 +1,118 @@
+@import url(../../../style.css);
+@import url(../../docs.css);
+
+:root {
+    --light-bg: rgb(255, 255, 255);
+    --product-brand: rgb(219, 143, 2);
+    --product-name: rgb(107, 107, 107);
+    --product-price: black;
+    --product-offer: green;
+    --card-shadow: black;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 0.7rem;
+}
+
+.img-card {
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-card:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.hide-content {
+    display: none;
+}
+
+.card-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1rem 0;
+    background-color: var(--light-bg);
+}
+
+.card-product-brand {
+    font-weight: bold;
+    color: var(--product-brand);
+    text-transform: uppercase;
+}
+
+.card-product-name {
+    color: var(--product-name);
+    font-size: 0.85em;
+}
+
+.card-product-price {
+    color: var(--product-price);
+    font-weight: bold;
+}
+
+.pro-off {
+    color: var(--product-price);
+}
+
+.card-product-offer {
+    color: var(--product-offer);
+}
+
+/* Card with dismiss */
+.card-close {
+    position: absolute;
+    top: 60.5rem;
+    left: 32.5rem;
+    font-size: 1.8rem;
+}
+
+/* card with text Overlay */
+.details-overlay {
+    position: absolute;
+    left: 20rem;
+    background-color: transparent;
+}
+
+/* Card horizontal */
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 38%;
+}
+
+.card-horizontal-details {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 1rem 2rem;
+}
+
+/* Card with shadow */
+.card-shadow {
+    box-shadow: 2px 5px 10px var(--card-shadow);
+}
+
+/* card with badge */
+.card-badge::after {
+    position: absolute;
+    content: "Top Product";
+    top: 13.5rem;
+    left: 17.6rem;
+    padding: 0.5rem 2rem;
+    background: var(--product-brand);
+    font-size: 0.5rem;
+    font-weight: bold;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
