@@ -1,0 +1,68 @@
+:root {
+    --linkedIn: blue;
+    --youtube: red;
+    --instagram: purple;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    width: 60vw;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+}
+
+.list-circle {
+    list-style-type: circle;
+}
+
+.list-square {
+    list-style-type: square;
+}
+
+.roman-small {
+    list-style-type: lower-roman;
+}
+
+.alpa-small {
+    list-style-type: lower-alpha;
+}
+
+/* Stacked List  */
+.list-stacked {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--primary-color);
+    width: 25vw;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.list-noti {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+    padding: 1rem 0;
+}
+
+.noti-name {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.icn-linkedIn {
+    color: var(--linkedIn);
+}
+
+.icn-youtube {
+    color: var(--youtube);
+}
+
+.icn-instagram {
+    color: var(--instagram);
+}
