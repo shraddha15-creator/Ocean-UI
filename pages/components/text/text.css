@@ -1,0 +1,51 @@
+:root {
+    --text-gray: rgb(99, 99, 99);
+}
+
+.text-ut-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    width: 60vw;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+}
+
+.container-light {
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.para-lg {
+    font-size: 2rem;
+}
+
+.para-md {
+    font-size: 1.5rem;
+}
+
+.para-sm {
+    font-size: 1rem;
+}
+
+.para-bold {
+    font-weight: bold;
+}
+
+.gray-text {
+    color: var(--text-gray)
+}
+
+.txt-start {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-end {
+    text-align: right;
+}
