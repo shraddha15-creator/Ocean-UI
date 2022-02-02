@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9a7380946.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./input.css">
+    <title>Inputs</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-nav">
+            <span class="brand-name"><a href="../index.html">Unfold 2.0</a></span>
+            <div class="github">
+                <a href="https://github.com/shraddha15-creator" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="comp-page-container">
+            <div class="navbar-left">
+                <span class="navbar-left-title">Installation</span>
+                <a class="navbar-left-items" href="../../docs.html">Refer</a>
+                <span class="navbar-left-title">Components</span>
+                <a class="navbar-left-items" href="../avatar/avatar.html">Avatars</a>
+                <a class="navbar-left-items" href="../alert/alert.html">Alert</a>
+                <a class="navbar-left-items" href="../badge/badge.html">Badge</a>
+                <a class="navbar-left-items" href="../button/button.html">Buttons</a>
+                <a class="navbar-left-items" href="../card/card.html">Cards</a>
+                <a class="navbar-left-items" href="../image/image.html">Image</a>
+                <a class="navbar-left-items active-tab" href="../input/input.html">Input</a>
+                <a class="navbar-left-items" href="../text/text.html">Text</a>
+                <a class="navbar-left-items" href="../list/list.html">Lists</a>
+                <a class="navbar-left-items" href="../navigation/navigation.html">Navigation</a>
+                <a class="navbar-left-items" href="../modal/modal.html">Modal</a>
+                <a class="navbar-left-items" href="../toast/toast.html">Toasts</a>
+                <a class="navbar-left-items" href="../grid/grid.html">Simplified Grid</a>
+            </div>
+            <div class="container-docs">
+                <span class="comp-page-header">Input</span>
+                <div class="comp-page-details">
+                    <h5>Simple Input Textbox</h5>
+                    <div class="input-container">
+                        <input class="input-box input-primary" type="text" placeholder="Enter first name">
+                        <input class="input-box input-primary" type="text" placeholder="Enter last name">
+                        <label class="input-label" for="input-box input-box-sq">Address</label>
+                        <textarea class="input-box input-box-sq" name="w3review" rows="4" cols="30"></textarea>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=one-light&wt=sharp&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-box%2520input-primary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520first%2520name%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-box%2520input-primary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520last%2520name%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-label%2522%2520for%253D%2522input-box%2520input-box-sq%2522%253EAddress%253C%252Flabel%253E%250A%253Ctextarea%2520class%253D%2522input-box%2520input-box-sq%2522%2520name%253D%2522w3review%2522%2520rows%253D%25224%2522%2520cols%253D%252230%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1000px; height: 200px; margin-bottom: 4rem; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <h5>Input with Validation</h5>
+                    <div class="input-container">
+                        <label for="input-box" class="input-label">Password</label>
+                        <input class="input-box input-secondary" id="input-success" type="text"
+                            placeholder="Enter first name">
+                        <div id="input-validation-msg"></div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=one-light&wt=sharp&l=auto&width=881.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522input-box%2522%2520class%253D%2522input-label%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522input-box%2520input-secondary%2522%2520id%253D%2522input-success%2522%2520type%253D%2522text%2522%2520%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520first%2520name%2522%253E%250A%2520%2520%253Cdiv%2520id%253D%2522input-validation-msg%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1000px; height: 183px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="input.js"></script>
+</body>
+
+</html>
