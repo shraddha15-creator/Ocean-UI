@@ -34,18 +34,19 @@
     box-shadow: 3px 3px 15px var(--modal-bg-color);
 }
 
-#open-modal {
+.open-modal {
     background-color: var(--primary-color);
     margin: 2rem 0;
     padding: 1rem 2rem;
     border: 1px solid var(--primary-light);
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .close {
     color: var(--text-gray);
     float: right;
-    font-size: 38px;
+    font-size: 2.7rem;
     font-weight: bold;
 }
 
