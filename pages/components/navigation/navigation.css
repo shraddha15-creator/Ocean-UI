@@ -1,0 +1,44 @@
+:root {
+    --white: white;
+    --shadow: rgb(73, 73, 73);
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: baseline;
+    width: 65vw;
+    margin: 4rem 0;
+    padding: 1rem;
+    border-radius: 100px;
+    background-color: var(--primary-light);
+    box-shadow: 5px 2px 5px var(--shadow)
+}
+
+.mid-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.mid-nav-item:hover {
+    font-weight: bold;
+}
+
+.right-nav {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.icon {
+    border-radius: 100px;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: var(--white);
+    border-radius: 100px;
+    padding: 0.7rem;
+    cursor: pointer;
+}
