@@ -1,73 +1,83 @@
 :root {
     --badge-active: green;
-    --badge-busy: red;
-    --badge-away: white;
-    --badge-away-outline: black;
+    --badge-red: red;
+    --badge-white: white;
+    --ig: purple;
+    --sc: rgb(238, 238, 44);
+    --tw: rgb(25, 188, 252);
+}
+
+.badge-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    border-radius: 100px;
+    margin: 2rem;
+}
+
+.badge-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .badge {
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: inline-block;
 }
 
-.badge-avatar {
-    padding: 1rem;
-}
-
-.badge-icon {
-    padding: 1rem;
-}
-
-.badge-icon i {
-    font-size: 4rem;
-}
-
-.badge-status-active {
+.icon-badge {
     position: absolute;
-    top: 16.7em;
-    left: 24.4em;
-    background-color: var(--badge-active);
+    width: 0.1%;
+    top: -10px;
+    left: 59%;
+    padding: 0.3rem 0.7rem;
     border-radius: 100%;
-    padding: 12px;
-}
-
-.badge-status-busy {
-    position: absolute;
-    top: 16.5em;
-    left: 31em;
-    background-color: var(--badge-busy);
-    border-radius: 100%;
-    padding: 10px;
-}
-
-.badge-status-away {
-    position: absolute;
-    top: 15.9em;
-    left: 36.8em;
-    background-color: var(--badge-away);
-    border: 2px solid var(--badge-away-outline);
-    border-radius: 100%;
-    padding: 5px;
-}
-
-.badge-noti-icon {
-    position: absolute;
-    bottom: -2rem;
-    color: var(--badge-away);
-    background-color: var(--badge-busy);
+    background: var(--badge-red);
+    color: var(--badge-red);
+    font-size: 0.7rem;
     font-weight: bold;
-    padding: 6px 12px;
+}
+
+.badge-nums {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--badge-white);
+}
+
+.avatar-badge {
+    position: absolute;
+    width: 0.1%;
+    bottom: 20%;
+    left: 70%;
+    padding: 0.6rem;
     border-radius: 100%;
+    background: var(--badge-active);
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.badge-noti-one {
-    left: 22.5rem;
+.avatar-badge span {
+    font-weight: var(--font-bold);
 }
 
-.badge-noti-two {
-    left: 24.5rem;
+.icon {
+    font-size: 3rem;
 }
 
-.badge-noti-three {
-    left: 34rem;
+.icon-ig {
+    color: var(--ig);
+}
+
+.icon-sc {
+    color: var(--sc);
+}
+
+.icon-tw {
+    color: var(--tw);
 }
