@@ -11,6 +11,7 @@
 }
 
 .card-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -37,6 +38,7 @@
 }
 
 .card-details-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,15 +74,17 @@
 /* Card with dismiss */
 .card-close {
     position: absolute;
-    top: 60.5rem;
-    left: 32.5rem;
+    top: 2.1rem;
+    left: 14rem;
     font-size: 1.8rem;
+    z-index: 1;
 }
 
 /* card with text Overlay */
 .details-overlay {
     position: absolute;
-    left: 20rem;
+    left: 1.5rem;
+    z-index: 2;
     background-color: transparent;
 }
 
@@ -108,11 +112,13 @@
 .card-badge::after {
     position: absolute;
     content: "Top Product";
-    top: 13.5rem;
-    left: 17.6rem;
+    z-index: 1;
+    width: 25%;
+    top: 2rem;
+    left: 0.1rem;
     padding: 0.5rem 2rem;
     background: var(--product-brand);
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-weight: bold;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
