@@ -1,0 +1,62 @@
+:root {
+    --toast-success: rgba(0, 128, 0, 0.205);
+    --toast-warn: rgba(255, 251, 0, 0.438);
+    --toast-err: rgba(255, 0, 0, 0.205);
+    --success-dark: green;
+    --warn-dark: rgb(255, 187, 0);
+    --err-dark: rgb(199, 1, 1);
+}
+
+.toast-container {
+    border-radius: 0.2rem;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.toast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 60%;
+}
+
+.close {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.toast-success {
+    background-color: var(--toast-success);
+    border: 2px solid var(--success-dark);
+}
+
+.toast-warn {
+    background-color: var(--toast-warn);
+    border: 2px solid var(--warn-dark);
+}
+
+.toast-err {
+    background-color: var(--toast-err);
+    border: 2px solid var(--err-dark);
+}
+
+.toast-icon {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.icon-success {
+    color: var(--success-dark)
+}
+
+.icon-warn {
+    color: var(--warn-dark)
+}
+
+.icon-err {
+    color: var(--err-dark)
+}
