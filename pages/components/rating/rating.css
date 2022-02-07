@@ -1,0 +1,40 @@
+:root {
+    --shadow-dark: rgba(0, 0, 0, 0.64);
+    --star-color: rgb(255, 187, 0);
+    --star-empty: rgb(133, 133, 133);
+}
+
+.rating-container {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-light);
+    padding: 0.8rem 1rem;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px 0px var(--shadow-dark);
+    width: 30%;
+}
+
+.rating-total {
+    font-weight: bold;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.star {
+    color: var(--star-color);
+    padding: 0 0.2rem;
+}
+
+.star-empty {
+    color: var(--star-empty);
+    padding: 0 0.2rem;
+}
