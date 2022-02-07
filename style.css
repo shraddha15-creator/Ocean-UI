@@ -8,6 +8,7 @@
 :root {
     --primary-color: #B98DFF;
     --primary-light: #eadcff;
+    --header-shadow: rgb(95, 94, 94);
 }
 
 body {
@@ -23,43 +24,41 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5rem;
+    margin: 0 0 2rem 0;
+    padding: 1rem 5rem;
     font-weight: bold;
+    background-color: var(--primary-light);
+    box-shadow: 1px 1px 10px var(--header-shadow);
 }
 
 .brand-name {
     font-size: 1.5rem;
 }
 
+.brand-logo {
+    width: 5%;
+}
 
 .container-main {
     display: flex;
-    justify-content: space-between;
-    padding: 2.5rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 0;
 }
 
 .hero-img img {
-    width: 35%;
-    padding-left: 6rem;
-}
-
-.hero-img-bg {
-    position: absolute;
-    top: 21.4em;
-    z-index: -1;
-    background: var(--primary-color);
-    height: 20%;
-    width: 30%;
-    border-radius: 3rem 3rem 8rem 6rem;
-    box-shadow: 5px 10px 20px rgb(58, 58, 58);
+    width: 15%;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1rem;
-    font-size: 2.3rem;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -70,8 +69,14 @@ a {
     border-radius: 100px;
     margin-top: 3rem;
     font-weight: bold;
+    box-shadow: 3px 1px 10px rgb(95, 94, 94);
+
 }
 
 .docs-btn:hover {
-    background-color: var(--primary-light);
+    background-color: var(--primary-color);
+}
+
+.icon-gh {
+    font-size: 2rem;
 }
