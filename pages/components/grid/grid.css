@@ -19,10 +19,10 @@
 }
 
 .grid-two {
-    grid-template-columns: 10rem 10rem;
+    grid-template-columns: 10fr 10fr;
 }
 
 .grid-three {
-    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-columns: 10fr 10fr 10fr;
     margin-bottom: 2rem;
 }
