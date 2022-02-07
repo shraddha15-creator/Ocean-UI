@@ -63,14 +63,12 @@ a {
 }
 
 .docs-btn {
-    background-color: var(--primary-color);
-    border: none;
+    background-color: var(--primary-light);
+    border: 2px solid var(--primary-color);
     padding: 1rem;
     border-radius: 100px;
     margin-top: 3rem;
     font-weight: bold;
-    box-shadow: 3px 1px 10px rgb(95, 94, 94);
-
 }
 
 .docs-btn:hover {
