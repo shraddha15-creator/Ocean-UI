@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9a7380946.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../docs.css">
+    <link rel="stylesheet" href="./slider.css">
+    <title>Slider</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-nav">
+            <span class="brand-name"><a href="../../../index.html">Unfold 2.0</a></span>
+            <div class="github">
+                <a href="https://github.com/shraddha15-creator" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="comp-page-container">
+            <div class="navbar-left">
+                <span class="navbar-left-title">Installation</span>
+                <a class="navbar-left-items" href="../../docs.html">Refer</a>
+                <span class="navbar-left-title">Components</span>
+                <a class="navbar-left-items" href="../avatar/avatar.html">Avatars</a>
+                <a class="navbar-left-items" href="../alert/alert.html">Alert</a>
+                <a class="navbar-left-items" href="../badge/badge.html">Badge</a>
+                <a class="navbar-left-items" href="../button/button.html">Buttons</a>
+                <a class="navbar-left-items" href="../card/card.html">Cards</a>
+                <a class="navbar-left-items" href="../image/image.html">Image</a>
+                <a class="navbar-left-items" href="../input/input.html">Input</a>
+                <a class="navbar-left-items" href="../text/text.html">Text Utilities</a>
+                <a class="navbar-left-items" href="../list/list.html">Lists</a>
+                <a class="navbar-left-items" href="../navigation/navigation.html">Navigation</a>
+                <a class="navbar-left-items" href="../modal/modal.html">Modal</a>
+                <a class="navbar-left-items" href="../toast/toast.html">Toasts</a>
+                <a class="navbar-left-items" href="../grid/grid.html">Simplified Grid</a>
+                <a class="navbar-left-items" href="../rating/rating.html">Ratings</a>
+                <a class="navbar-left-items active-tab" href="../slider/slider.html">Slider</a>
+            </div>
+            <div class="container-docs">
+                <span class="comp-page-header">Slider</span>
+                <div class="comp-page-details">
+                    <h3>Default Silder</h3>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="100" value="50">
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28220%2C162%2C248%2C1%29&t=one-light&wt=none&l=htmlmixed&width=951.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%252F%252F%2520Default%2520Slider%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cinput%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%2522100%2522%2520value%253D%252250%2522%253E%250A"
+                        style="width: 952px; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                    <h3>Silder with style</h3>
+                    <div class="slider-container">
+                        <input class="slider-one" type="range" min="1" max="100" value="50">
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28220%2C162%2C248%2C1%29&t=one-light&wt=none&l=htmlmixed&width=951.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%252F%252F%2520Slider%2520with%2520style%250A%2520%2520%2520%2520%2509%2520%2520%253Cinput%2520class%253D%2522slider-one%2522%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%2522100%2522%2520value%253D%252250%2522%253E"
+                        style="width: 952px; height: 197px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                    <h3>Silder with style and range value</h3>
+                    <div class="slider-container">
+                        <span class="rangeValue">0</span>
+                        <Input class="slider-two" type="range" value="0" min="0" max="100"
+                            onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28220%2C162%2C248%2C1%29&t=one-light&wt=none&l=htmlmixed&width=951.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520Slider%2520with%2520style%2520and%2520range%2520value%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slider-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rangeValue%2522%253E0%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CInput%2520class%253D%2522slider-two%2522%2520type%253D%2522range%2522%2520value%253D%25220%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520onChange%253D%2522rangeSlide%28this.value%29%2522%2520onmousemove%253D%2522rangeSlide%28this.value%29%2522%253E%253C%252FInput%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 952px; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <h4>Add JavaScript for showing range of a slider</h4>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28220%2C162%2C248%2C1%29&t=one-light&wt=none&l=javascript&width=951.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520JavaScript%2520for%2520showing%2520range%2520value%250A%253Cscript%2520type%253D%2522text%252Fjavascript%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520function%2520rangeSlide%28value%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520document.querySelector%28%27.rangeValue%27%29.innerHTML%2520%253D%2520value%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%253C%252Fscript%253E"
+                        style="width: 1024px; height: 243px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        function rangeSlide(value) {
+            document.querySelector('.rangeValue').innerHTML = value;
+        }
+    </script>
+</body>
+
+</html>
