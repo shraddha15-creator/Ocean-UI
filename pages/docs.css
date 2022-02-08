@@ -31,7 +31,7 @@
 .active-tab {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     background-color: var(--primary-light);
     /* border-bottom: 2px solid var(--primary-light); */
 }
