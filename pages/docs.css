@@ -15,17 +15,22 @@
 }
 
 .navbar-left-items {
-    padding: 0.3rem 0.5rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
 }
 
 .navbar-left-items:hover {
     background-color: var(--primary-light);
-    padding: 0.3rem 0.5rem;
-    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    /* border-radius: 1rem; */
 }
 
 .active-tab {
-    color: var(--primary-color)
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: var(--primary-light);
+    /* border-bottom: 2px solid var(--primary-light); */
 }
 
 .container-docs {

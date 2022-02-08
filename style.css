@@ -6,11 +6,10 @@
 }
 
 :root {
-    /* --primary-color: #B98DFF; */
     --primary-color: black;
-    /* --primary-light: #eadcff; */
-    --primary-light: rgb(133, 133, 133);
+    --primary-light: rgba(202, 202, 202, 0.596);
     --header-shadow: rgb(95, 94, 94);
+    --white: white;
 }
 
 body {

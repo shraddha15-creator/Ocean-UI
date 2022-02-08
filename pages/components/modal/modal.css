@@ -1,7 +1,8 @@
 :root {
     --modal-bg-color: rgb(0, 0, 0);
-    --modal-bg-opacity: rgba(0, 0, 0, 0.4);
+    --modal-bg-opacity: rgba(0, 0, 0, 0.788);
     --close-black: black;
+    --icon-gift-color: rgb(196, 49, 49);
 }
 
 .modal-container {
@@ -36,6 +37,7 @@
 
 .open-modal {
     background-color: var(--primary-color);
+    color: var(--white);
     margin: 2rem 0;
     padding: 1rem 2rem;
     border: 1px solid var(--primary-light);
@@ -65,7 +67,7 @@
 
 .icon-gift {
     font-size: 6rem;
-    color: var(--primary-color);
+    color: var(--icon-gift-color);
 }
 
 .offer-off {
