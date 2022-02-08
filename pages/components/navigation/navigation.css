@@ -1,3 +1,5 @@
+@import url(../button/button.css);
+
 :root {
     --white: white;
     --shadow: rgb(73, 73, 73);
@@ -10,15 +12,24 @@
     text-align: baseline;
     width: 65vw;
     margin: 4rem 0;
-    padding: 1rem;
-    border-radius: 100px;
-    background-color: var(--primary-light);
-    box-shadow: 5px 2px 5px var(--shadow)
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 5px 2px 5px 0 var(--shadow)
+}
+
+.left-nav .brand a {
+    color: var(--white);
 }
 
 .mid-nav {
     display: flex;
     gap: 1rem;
+}
+
+.mid-nav-item {
+    color: var(--white);
 }
 
 .mid-nav-item:hover {
@@ -41,4 +52,16 @@
     border-radius: 100px;
     padding: 0.7rem;
     cursor: pointer;
+    color: var(--black);
+}
+
+.btn {
+    background-color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 100px;
+    border: 2px solid var(--white);
 }
