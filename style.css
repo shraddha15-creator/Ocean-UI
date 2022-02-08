@@ -6,8 +6,10 @@
 }
 
 :root {
-    --primary-color: #B98DFF;
-    --primary-light: #eadcff;
+    /* --primary-color: #B98DFF; */
+    --primary-color: black;
+    /* --primary-light: #eadcff; */
+    --primary-light: rgb(133, 133, 133);
     --header-shadow: rgb(95, 94, 94);
 }
 
@@ -27,12 +29,13 @@ a {
     margin: 0 0 2rem 0;
     padding: 1rem 5rem;
     font-weight: bold;
-    background-color: var(--primary-light);
+    background-color: var(--primary-color);
     box-shadow: 1px 1px 10px var(--header-shadow);
 }
 
-.brand-name {
+.brand-name a {
     font-size: 1.5rem;
+    color: white;
 }
 
 .brand-logo {
@@ -75,6 +78,11 @@ a {
     background-color: var(--primary-color);
 }
 
+.docs-btn:hover a {
+    color: white;
+}
+
 .icon-gh {
     font-size: 2rem;
+    color: white;
 }
