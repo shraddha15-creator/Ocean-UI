@@ -26,19 +26,20 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 2rem 0;
-    padding: 1rem 5rem;
-    font-weight: bold;
+    padding: 0.5rem 5rem;
+    font-weight: 400;
     background-color: var(--primary-color);
     box-shadow: 1px 1px 10px var(--header-shadow);
 }
 
 .brand-name a {
     font-size: 1.5rem;
-    color: white;
+    color: var(--white);
 }
 
 .brand-logo {
-    width: 5%;
+    width: 4%;
+    align-items: center;
 }
 
 .container-main {
