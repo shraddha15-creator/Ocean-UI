@@ -74,10 +74,11 @@
 /* Card with dismiss */
 .card-close {
     position: absolute;
-    top: 2.1rem;
-    left: 14rem;
-    font-size: 1.8rem;
     z-index: 1;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--white);
+    font-size: 1.1rem;
 }
 
 /* card with text Overlay */
