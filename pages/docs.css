@@ -48,3 +48,10 @@
 .comp-page-details {
     padding: 3rem 0;
 }
+
+/* Media Query */
+@media (max-width: 1000px) {
+    .navbar-left {
+        visibility: hidden;
+    }
+}
