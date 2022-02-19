@@ -31,6 +31,7 @@ a {
     font-weight: 400;
     background-color: var(--primary-color);
     box-shadow: 1px 1px 10px var(--header-shadow);
+    width: 100%;
 }
 
 .brand-name a {
@@ -87,4 +88,11 @@ a {
 .icon-gh {
     font-size: 2rem;
     color: var(--white);
+}
+
+@media (max-width: 800px) {
+
+    .hero-img img {
+        width: 40%;
+    }
 }

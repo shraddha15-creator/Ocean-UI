@@ -39,6 +39,7 @@
 .container-docs {
     margin: 0 1rem 0 6rem;
     padding: 0 2rem 0 0;
+    width: 100%;
 }
 
 .comp-page-header {
@@ -49,9 +50,21 @@
     padding: 3rem 0;
 }
 
+iFrame {
+    width: 100%;
+}
+
 /* Media Query */
 @media (max-width: 1000px) {
     .navbar-left {
         visibility: hidden;
+    }
+
+    .container-docs {
+        margin: 0;
+    }
+
+    .comp-page-container {
+        justify-content: center;
     }
 }
