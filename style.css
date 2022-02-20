@@ -31,7 +31,7 @@ a {
     font-weight: 400;
     background-color: var(--primary-color);
     box-shadow: 1px 1px 10px var(--header-shadow);
-    width: 100%;
+    /* width: 100%; */
 }
 
 .brand-name a {
