@@ -60,3 +60,17 @@
 .icon-err {
     color: var(--err-dark)
 }
+
+@media (max-width: 850px) {
+    .toast {
+        font-size: .5rem;
+    }
+
+    .toast-icon {
+        font-size: .8rem;
+    }
+
+    .close {
+        font-size: 1rem;
+    }
+}

@@ -96,4 +96,12 @@ a {
     .hero-img img {
         width: 40%;
     }
+
+    .brand-name a {
+        font-size: 1rem;
+    }
+
+    .icon-gh {
+        font-size: 1.5rem;
+    }
 }

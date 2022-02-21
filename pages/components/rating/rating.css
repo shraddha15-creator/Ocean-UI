@@ -8,17 +8,16 @@
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 3px;
+    max-width: 30%;
+
 }
 
 .rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--primary-light);
     padding: 0.8rem 1rem;
     border-radius: 100px;
-    box-shadow: 2px 2px 2px 0px var(--shadow-dark);
-    width: 30%;
 }
 
 .rating-total {

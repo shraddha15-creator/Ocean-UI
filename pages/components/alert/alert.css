@@ -7,13 +7,14 @@
 
 .alert-container {
     padding: 1rem;
+    width: 100%;
     /* background-color: yellow; */
 }
 
 .alert {
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
     width: 40%;
     border-radius: 5px;
@@ -35,4 +36,12 @@
 
 .alert-err {
     background-color: var(--alert-err);
+}
+
+@media (max-width: 1000px) {
+    .alert-container {
+        font-size: .5rem;
+        font-weight: 700;
+        padding: .5rem 0;
+    }
 }

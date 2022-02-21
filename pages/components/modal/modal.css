@@ -87,3 +87,17 @@
 .modal-live-link {
     margin-top: 2rem;
 }
+
+@media (max-width: 750px) {
+    .modal-sample {
+        font-size: .8rem;
+    }
+
+    .icon-gift {
+        font-size: 4rem;
+    }
+
+    .offer-off {
+        font-size: 2rem;
+    }
+}

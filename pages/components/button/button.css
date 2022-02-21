@@ -3,6 +3,7 @@
 }
 
 .btn {
+    margin: 2px;
     padding: 0.5rem 2rem;
     border-radius: 100px;
     border: 2px solid var(--primary-color);
