@@ -20,13 +20,9 @@ Unfonld 2.0 is an Open Source, easy to use Component Library. That helps you bui
 
 </div>
 
-<h2><a href="https://unfold-ui.netlify.app/">Live Link</a></h2>
+<h2><a href="https://unfold-ui.netlify.app/">Documentation Site</a></h2>
 
 <br>
-
-## Documentation Site
-
--   <h2> <a href="https://unfold-ui.netlify.app/">Installation</a> </h2>
 
 <br>
 
