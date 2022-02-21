@@ -39,7 +39,8 @@
 .container-docs {
     margin: 0 1rem 0 6rem;
     padding: 0 2rem 0 0;
-    width: 100%;
+    /* width: 100%; */
+    max-width: -webkit-fill-available;
 }
 
 .comp-page-header {
@@ -50,8 +51,16 @@
     padding: 3rem 0;
 }
 
-iFrame {
+.iframe-container {
+    box-sizing: border-box;
     width: 100%;
+    padding: 1rem 0;
+    margin: 2rem 0;
+    overflow: auto;
+}
+
+.iframe-container iFrame {
+    border: none;
 }
 
 /* Media Query */
@@ -62,6 +71,7 @@ iFrame {
 
     .container-docs {
         margin: 0;
+        width: 70%;
     }
 
     .comp-page-container {

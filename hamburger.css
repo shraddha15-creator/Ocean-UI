@@ -1,153 +1,93 @@
 :root {
-    --overlay-color: rgba(79, 82, 85, 0.753);
-    --menu-speed: 0.75s;
+    --hambrg-bg: rgb(206, 206, 206);
+    --hambrg-shadow: rgb(104, 104, 104);
 }
 
-* {
-    box-sizing: border-box;
+.hamb-items {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    gap: 0.3rem;
 }
 
-/* menu style */
-.menu-wrap {
+.hamb-items a {
+    padding: .4rem;
+    font-weight: 500;
+    font-size: .9rem;
+    background-color: var(--hambrg-bg);
+    box-shadow: 1px 2px 5px var(--hambrg-shadow)
+}
+
+.hamb-items .active-tab {
+    font-weight: 700;
+}
+
+#hamburger-menu {
+    background: var(--hambrg-bg);
+    width: 40%;
+    height: 100vh;
     position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10, 2, 3, 1);
+    transform: translateX(50rem);
     top: 0;
-    left: 0;
-    z-index: 1;
+    /* z-index: 0; */
+    transition: 0.5s;
 }
 
-.menu-wrap .toggler {
+#hamburger-input {
+    display: none;
+}
+
+#hamburger-input:checked~#hamburger-menu {
+    transform: translateX(0rem);
+}
+
+#burger {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 1.6rem;
+    height: 1.6rem;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#burger>div {
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+#hamburger-input:checked~#burger>div {
+    font-weight: 900;
+}
+
+#hamburger-input:checked~#burger>div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+#hamburger-input:checked~#burger>div:nth-child(2) {
     opacity: 0;
 }
 
-.menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#hamburger-input:checked~#burger>div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
 }
 
-.menu-wrap .hamburger>div {
-    position: relative;
-    width: 100%;
-    height: 2px;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-}
-
-.menu-wrap .hamburger>div:before,
-.menu-wrap .hamburger>div:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-}
-
-/* Moves line down */
-.menu-wrap .hamburger>div:after {
-    top: 10px;
-}
-
-/* Toggler animate */
-.menu-wrap .toggler:checked+.hamburger>div {
-    transform: rotate(135deg);
-}
-
-/* Turn lines into X */
-.menu-wrap .toggler:checked+.hamburger>div:before,
-.menu-wrap .toggler:checked+.hamburger>div:after {
-    top: 0;
-    transform: rotate(90deg)
-}
-
-/* Rotate on hover when checked */
-.menu-wrap .toggler:checked:hover+.hamburger>div {
-    transform: rotate(225deg);
-}
-
-/* show menu */
-.menu-wrap .toggler:checked~.menu {
-    visibility: visible;
-}
-
-.menu-wrap .toggler:checked~.menu>div {
-    transform: translateX(0);
-
-    transition-duration: var(--menu-speed);
-}
-
-.menu-wrap .toggler:checked~.menu>div>div {
-    opacity: 1;
-    transition: opacity 0.4 ease;
-}
-
-.menu-wrap .menu {
-    position: fixed;
-    top: 5%;
-    width: 100%;
-    height: 100vh;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.menu-wrap .menu>div {
-    background-color: var(--overlay-color);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex: none;
-    justify-content: start;
-    transform: translate(-150%);
-    transition: all .4s ease;
-}
-
-.menu-wrap .menu>div>div {
-    text-align: start;
-    padding: 3rem 0 0 2rem;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu>div>div>ul>li {
-    list-style: none;
-    color: var(--white);
-    font-size: 1rem;
-    padding: .5rem;
-}
-
-.menu-wrap .menu>div>div>ul>li>a {
-    color: inherit;
-    text-decoration: none;
-    transition: color .4s ease;
-}
 
 @media (min-width: 1000px) {
-    .menu-wrap {
+    .hamburger {
         visibility: hidden;
     }
+}
 
+@media only screen and (max-width: 800px) {
+    #burger {
+        width: 1.5rem;
+        height: 1.3rem;
+    }
 }

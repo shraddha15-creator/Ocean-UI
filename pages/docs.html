@@ -23,37 +23,36 @@
 			</div>
 		</div>
 	</header>
-	<!-- hamburger /////////////////////////// -->
-	<div class="menu-wrap">
-		<input type="checkbox" class="toggler">
-		<div class="hamburger">
+
+	<!-- Hamburger start -->
+	<div class="hamburger">
+		<input type="checkbox" id="hamburger-input">
+		<label id="burger" for="hamburger-input">
 			<div></div>
-		</div>
-		<div class="menu">
-			<div>
-				<div>
-					<ul>
-						<li><a class="navbar-left-items" href="./components/avatar/avatar.html">Avatars</li>
-						<li><a class="navbar-left-items" href="./components/alert/alert.html">Alert</li>
-						<li><a class="navbar-left-items" href="./components/badge/badge.html">Badge</li>
-						<li><a class="navbar-left-items" href="./components/button/button.html">Buttons</li>
-						<li><a class="navbar-left-items" href="./components/card/card.html">Cards</li>
-						<li><a class="navbar-left-items" href="./components/image/image.html">Image</li>
-						<li><a class="navbar-left-items" href="./components/input/input.html">Input</li>
-						<li><a class="navbar-left-items" href="./components/text/text.html">Text</li>
-						<li><a class="navbar-left-items" href="./components/list/list.html">Lists</li>
-						<li><a class="navbar-left-items" href="./components/navigation/navigation.html">Navigation</li>
-						<li><a class="navbar-left-items" href="./components/modal/modal.html">Modal</li>
-						<li><a class="navbar-left-items" href="./components/toast/toast.html">Toasts</li>
-						<li><a class="navbar-left-items" href="./components/grid/grid.html">Simplified Grid</li>
-						<li><a class="navbar-left-items" href="./components/rating/rating.html">Ratings</li>
-						<li><a class="navbar-left-items" href="./components/slider/slider.html">Slider</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+			<div></div>
+			<div></div>
+		</label>
+		<nav id="hamburger-menu" class="hamb-items">
+			<a class="navbar-left-items active-tab" href="./docs.html">Refer</a>
+			<span class="navbar-left-title">Components</span>
+			<a class="navbar-left-items" href="./components/avatar/avatar.html">Avatars</a>
+			<a class="navbar-left-items" href="./components/alert/alert.html">Alert</a>
+			<a class="navbar-left-items" href="./components/badge/badge.html">Badge</a>
+			<a class="navbar-left-items" href="./components/button/button.html">Buttons</a>
+			<a class="navbar-left-items" href="./components/card/card.html">Cards</a>
+			<a class="navbar-left-items" href="./components/image/image.html">Image</a>
+			<a class="navbar-left-items" href="./components/input/input.html">Input</a>
+			<a class="navbar-left-items" href="./components/text/text.html">Text</a>
+			<a class="navbar-left-items" href="./components/list/list.html">Lists</a>
+			<a class="navbar-left-items" href="./components/navigation/navigation.html">Navigation</a>
+			<a class="navbar-left-items" href="./components/modal/modal.html">Modal</a>
+			<a class="navbar-left-items" href="./components/toast/toast.html">Toasts</a>
+			<a class="navbar-left-items" href="./components/grid/grid.html">Simplified Grid</a>
+			<a class="navbar-left-items" href="./components/rating/rating.html">Ratings</a>
+			<a class="navbar-left-items" href="./components/slider/slider.html">Slider</a>
+		</nav>
 	</div>
-	<!-- /////////////////////////////// -->
+	<!-- Hamburger end -->
 	<main>
 		<div class="comp-page-container">
 			<div class="navbar-left">
@@ -82,11 +81,13 @@
 				<p class="comp-page-details">
 					To use <b>Unfold 2.0</b> in your Projects, you need to import the Stylesheet in your css file.
 				</p>
-				<iframe
-					src="https://carbon.now.sh/embed?bg=rgba%28220%2C162%2C248%2C1%29&t=one-light&wt=none&l=auto&width=951.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520Import%2520this%2520in%2520your%2520css%2520file%250A%2540import%2520url%28%2522https%253A%252F%252Funfold-ui.netlify.app%252Fcss%252Fcomponents.css%2522%29%253B%250A%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%252F%252F%2520Or%250A%252F%252F%2520Import%2520this%2520in%2520your%2520html%2520file%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Funfold-ui.netlify.app%252Fcss%252Fcomponents.css%2522"
-					style="width: 1000px; height: 300px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>
+
+				<div class="iframe-container">
+					<iframe
+						src="https://carbon.now.sh/embed?bg=rgba%28220%2C162%2C248%2C1%29&t=one-light&wt=none&l=auto&width=951.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520Import%2520this%2520in%2520your%2520css%2520file%250A%2540import%2520url%28%2522https%253A%252F%252Funfold-ui.netlify.app%252Fcss%252Fcomponents.css%2522%29%253B%250A%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%252F%252F%2520Or%250A%252F%252F%2520Import%2520this%2520in%2520your%2520html%2520file%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Funfold-ui.netlify.app%252Fcss%252Fcomponents.css%2522"
+						style="border:0; width:1000px; overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+					</iframe>
+				</div>
 			</div>
 		</div>
 	</main>
