@@ -16,7 +16,7 @@
 
 ## Unfold 2.0 is exact what you are looking for!!
 
-Unfonld 2.0 an Open Source, easy to use Component Library. That helps you build your projects faster.
+Unfonld 2.0 is an Open Source, easy to use Component Library. That helps you build your projects faster.
 
 </div>
 
