@@ -47,3 +47,11 @@ Unfonld 2.0 an Open Source, easy to use Component Library. That helps you build 
 | 13  | Simplified Grid | <a href="https://unfold-ui.netlify.app/pages/components/grid/grid.html"> Simplified Grid Demo </a>        |
 | 14  | Rating          | <a href="https://unfold-ui.netlify.app/pages/components/rating/rating.html"> Rating Demo </a>             |
 | 15  | Slider          | <a href="https://unfold-ui.netlify.app/pages/components/slider/slider.html"> Slider Demo </a>             |
+
+<br>
+
+## 🔗 Links
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://shraddha-muley.netlify.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shraddha-muley-81886b1a9/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/shraddhaaa7)
