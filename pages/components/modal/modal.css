@@ -27,7 +27,8 @@
 }
 
 .modal-content {
-    background-color: var(--primary-light);
+    /* background-color: var(--primary-light); */
+    background-color: rgb(195, 144, 250);
     text-align: center;
     margin: auto;
     padding: 20px;
